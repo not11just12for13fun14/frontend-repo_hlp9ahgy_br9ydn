@@ -1,0 +1,30 @@
+export const pastries = [
+  { id: 'brownie', name: 'Brownie', price: 2.5, img: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop', desc: 'Rich chocolate brownie with a fudgy center.' },
+  { id: 'muffins', name: 'Muffins', price: 2.2, img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop', desc: 'Soft muffins baked fresh every morning.' },
+  { id: 'lemon-tart', name: 'Lemon Tart', price: 3.4, img: 'https://images.unsplash.com/photo-1606313564212-2a9b3a5b2d8c?q=80&w=1200&auto=format&fit=crop', desc: 'Zesty lemon curd on a buttery crust.' },
+  { id: 'blueberry-tart', name: 'Blueberry Tart', price: 3.6, img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop', desc: 'Sweet blueberries atop crème pâtissière.' },
+  { id: 'raspberry-tart', name: 'Raspberry Tart', price: 3.8, img: 'https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop', desc: 'Tangy raspberries, delicate glaze.' },
+  { id: 'mango-tart', name: 'Mango Tart', price: 3.8, img: 'https://images.unsplash.com/photo-1563682146042-54e4773f8a7b?q=80&w=1200&auto=format&fit=crop', desc: 'Sunny mango slices, tropical delight.' },
+  { id: 'carrot-cake', name: 'Carrot Cake Slice', price: 3.2, img: 'https://images.unsplash.com/photo-1601972599720-bab4b3f560f5?q=80&w=1200&auto=format&fit=crop', desc: 'Moist carrot cake with cream cheese frosting.' },
+  { id: 'lemon-meringue', name: 'Lemon Meringue Tart', price: 3.9, img: 'https://images.unsplash.com/photo-1633933353086-43fefbb8d05c?q=80&w=1200&auto=format&fit=crop', desc: 'Silky lemon filling crowned with toasted meringue.' },
+]
+
+export const drinks = [
+  { id: 'expresso', name: 'Expresso', price: 1.70 },
+  { id: 'double-expresso', name: 'Double Expresso', price: 2.20 },
+  { id: 'single-macchiato', name: 'Single Macchiato', price: 1.80 },
+  { id: 'double-macchiato', name: 'Double Macchiato', price: 2.30 },
+  { id: 'latte', name: 'Latte (1 Shot)', price: 2.40 },
+  { id: 'cafe-au-lait', name: 'Café au Lait', price: 2.40 },
+  { id: 'flat-white', name: 'Flat White', price: 2.40 },
+  { id: 'americano', name: 'Americano', price: 2.10 },
+  { id: 'cappuccino', name: 'Cappuccino', price: 2.50 },
+  { id: 'moka', name: 'Moka', price: 2.90 },
+  { id: 'hot-choc', name: 'Hot Chocolate', price: 2.70 },
+  { id: 'babyccino', name: 'Babyccino', price: 1.00 },
+  { id: 'syrup', name: 'Vanilla or Caramel Syrup', price: 0.30, addon: true },
+  { id: 'alt-milk', name: 'Almond or Soya Milk', price: 0.30, addon: true },
+  { id: 'iced-coffee', name: 'Iced Coffee', price: 2.90 },
+  { id: 'iced-tea', name: 'Iced Tea', price: 2.90 },
+  { id: 'hot-choc-large', name: 'Hot Chocolate (Large)', price: 3.20 },
+]

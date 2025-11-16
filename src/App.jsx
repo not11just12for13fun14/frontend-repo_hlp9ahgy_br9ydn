@@ -1,27 +1,29 @@
-import { useState } from 'react'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { CartProvider } from './context/CartContext'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Menu from './pages/Menu'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Order from './pages/Order'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
+    <CartProvider>
+      <div className="min-h-screen flex flex-col bg-[#FFFDF7] text-amber-900">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/order" element={<Order />} />
+        </Routes>
+        <Footer />
       </div>
-    </div>
+    </CartProvider>
   )
 }
 
